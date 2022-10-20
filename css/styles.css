@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  width: 1170px;
 }
 .logo {
   font-family: 'Raleway';
@@ -13,6 +14,7 @@ body {
 .list {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -29,16 +31,31 @@ body {
 
 .btn {
   border: 1px, solid transparent;
+  display: inline-block;
+  cursor: pointer;
 }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 /* HEADER */
 
 .header-nav {
 margin: 0;
+padding: 0;
 }
 .nav-list {
+  display: flex;
 margin: 0;
+padding: 0;
 }
-
+.accent {
+  color: #2196f3;
+}
 .header-logo {
   font-weight: 700;
   font-size: 26px;
@@ -46,10 +63,15 @@ margin: 0;
   letter-spacing: 0.03em;
   color: #000000;
 }
-.accent {
-  color: #2196f3;
+
+.header-nav-iteam:not(:last-child) {
+  margin-right: 50px;
 }
+
 .header-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -62,32 +84,35 @@ margin: 0;
   color: #2196f3;
 }
 
-.header-mail-link {
+
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #2196f3;
-}
-
-.header-tel-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+
 
 /* MAIN */
 
 .hero {
   background: #2f303a;
-  width: 1300px;
-  height: 600px;
+  width: 1600px;
   margin-bottom: 94px;
+padding: 0;
 }
 
 .hero-title {
+  margin-left: 452px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  width: 696px;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -95,10 +120,11 @@ margin: 0;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-color);
-  margin: 0;
 }
 
 .main-btn {
+  margin-left: 692px;
+  margin-bottom: 200px;
   display: inline-block;
   min-width: 216px;
   min-height: 50px;
@@ -235,10 +261,7 @@ margin: 0;
   background-color: #2f303a;
 }
 
-.nav-list {
-  margin: 0;
-  padding-left: 215px;
-}
+
 
 .footer-logo {
   font-weight: 700;
@@ -272,8 +295,17 @@ margin: 0;
 .btn-list {
   text-decoration: none;
   list-style: none;
+  margin-bottom: 34px;
+  margin-top: 0;
+  padding: 0;
 }
+
 .second-btn {
+  min-width: 73px;
+  min-height: 26px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -284,6 +316,8 @@ margin: 0;
 }
 
 .work {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
 }
