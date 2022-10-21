@@ -44,19 +44,15 @@ h3 {
 
 /* HEADER */
 
-.header-nav {
-margin: 0;
-padding: 0;
-}
-.nav-list {
+.page-header {
   display: flex;
-margin: 0;
-padding: 0;
+  align-items: center;
+  background-color: aqua;
 }
-.accent {
-  color: #2196f3;
-}
+
 .header-logo {
+  margin-top: 24px;
+  margin-right: 93px;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -64,9 +60,26 @@ padding: 0;
   color: #000000;
 }
 
+.header-nav {
+  display: flex;
+margin: 0;
+padding: 0;
+}
+.nav-list {
+  display: flex;
+
+margin: 0;
+padding: 0;
+}
+.accent {
+  color: #2196f3;
+}
+
+
 .header-nav-iteam:not(:last-child) {
   margin-right: 50px;
 }
+
 
 .header-nav-link {
   display: block;
