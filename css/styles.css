@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  width: 1170px;
 }
 .logo {
   font-family: 'Raleway';
@@ -45,9 +44,13 @@ h3 {
 /* HEADER */
 
 .page-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   background-color: aqua;
+
 }
 
 .header-logo {
@@ -62,12 +65,11 @@ h3 {
 
 .header-nav {
   display: flex;
-margin: 0;
+margin-right: auto;
 padding: 0;
 }
 .nav-list {
   display: flex;
-
 margin: 0;
 padding: 0;
 }
