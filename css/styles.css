@@ -41,12 +41,15 @@ h3 {
   padding: 0;
 }
 
-/* HEADER */
-
-.page-header {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+/* HEADER */
+
+.page-header {
   display: flex;
   border-bottom: 1px solid #ececec;
   align-items: center;
@@ -163,9 +166,7 @@ h3 {
 }
 
 .about {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 94px 15px;
+  padding-bottom: 94px;
 }
 
 .about-title {
@@ -203,9 +204,7 @@ h3 {
 /* --Чим ми займаємось--*/
 
 .picture {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px 94px;
+  padding-bottom: 94px;
 }
 
 .picture-title {
@@ -232,9 +231,7 @@ h3 {
 /*  Наша команда  */
 
 .team {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px 94px;
+  padding-bottom: 94px;
 }
 
 .about-team {
@@ -250,7 +247,7 @@ h3 {
 }
 
 .team-title {
-  margin: 0;
+  margin: 0 0 50px;
   padding: 0;
   font-weight: 700;
   font-size: 36px;
@@ -331,10 +328,8 @@ h3 {
 
 /* PORTFOLIO */
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 94px 15px;
+.portfolio {
+  padding-top: 94px;
 }
 
 .btn-list {
@@ -368,7 +363,7 @@ h3 {
   flex-wrap: wrap;
   gap: 30px;
   margin: 0;
-  padding: 0;
+  padding: 34px 0 94px;
   text-decoration: none;
   list-style: none;
 }
