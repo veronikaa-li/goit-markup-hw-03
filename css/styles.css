@@ -48,9 +48,8 @@ h3 {
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
+  border-bottom: 1px solid #ececec;
   align-items: center;
-  background-color: aqua;
-
 }
 
 .header-logo {
@@ -65,23 +64,21 @@ h3 {
 
 .header-nav {
   display: flex;
-margin-right: auto;
-padding: 0;
+  margin-right: auto;
+  padding: 0;
 }
 .nav-list {
   display: flex;
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .accent {
   color: #2196f3;
 }
 
-
 .header-nav-iteam:not(:last-child) {
   margin-right: 50px;
 }
-
 
 .header-nav-link {
   display: block;
@@ -99,7 +96,6 @@ padding: 0;
   color: #2196f3;
 }
 
-
 .header-link {
   display: block;
   padding-top: 32px;
@@ -111,23 +107,18 @@ padding: 0;
   color: var(--title-text-color);
 }
 
-
-
 /* MAIN */
 
 .hero {
   background: #2f303a;
-  width: 1600px;
-  margin-bottom: 94px;
-padding: 0;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 200px 15px;
 }
 
 .hero-title {
-  margin-left: 452px;
-  margin-bottom: 30px;
-  margin-top: 0;
+  margin: 0 auto 30px;
   width: 696px;
-  
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -138,14 +129,13 @@ padding: 0;
 }
 
 .main-btn {
-  margin-left: 692px;
-  margin-bottom: 200px;
+  margin: 0 auto;
   display: inline-block;
   min-width: 216px;
   min-height: 50px;
   border-radius: 4px;
   padding: 10px 32px;
-  border-color: #2196F3;
+  border-color: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -155,7 +145,6 @@ padding: 0;
   letter-spacing: 0.06em;
   color: var(--accent-color);
   background: #2196f3;
-
 }
 
 /*  Про нас  */
@@ -174,14 +163,22 @@ padding: 0;
 }
 
 .about {
- margin-bottom: 94px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 15px;
 }
 
 .about-title {
+  display: flex;
+  gap: 30px;
   text-decoration: none;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.about-title-doing:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-title-name {
@@ -203,8 +200,12 @@ padding: 0;
   color: var(--title-text-color);
 }
 
+/* --Чим ми займаємось--*/
+
 .picture {
-  margin-bottom: 94px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 94px;
 }
 
 .picture-title {
@@ -218,27 +219,39 @@ padding: 0;
   color: var(--primary-text-color);
 }
 
-.team {
-  margin-bottom: 94px;
-}
-
 .picture-name {
+  display: flex;
+  gap: 30px;
+
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
 }
 
+/*  Наша команда  */
+
+.team {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px 94px;
+}
+
 .about-team {
+  display: flex;
   text-decoration: none;
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+.team-member:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
   margin: 0;
   padding: 0;
-
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -249,24 +262,31 @@ padding: 0;
 
 .team-photo {
   margin-bottom: 30px;
-  }
+}
+
+.members-title {
+  padding: 30px 62px;
+}
 
 .about-team-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 .about-team-text {
   margin: 0;
+  padding: 0;
 
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
+  text-align: center;
+
   color: var(--title-text-color);
 }
 
@@ -274,14 +294,27 @@ padding: 0;
 
 .footer {
   background-color: #2f303a;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 15px;
 }
 
-
-
 .footer-logo {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.footer-adress-link {
+  margin-bottom: 9px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -293,21 +326,21 @@ padding: 0;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #2196f3;
-}
-.footer-adress-link {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* PORTFOLIO */
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 15px;
+}
+
 .btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
   text-decoration: none;
   list-style: none;
   margin-bottom: 34px;
@@ -331,13 +364,26 @@ padding: 0;
 }
 
 .work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
 }
 
+.work-wrapper {
+  flex-basis: calc((100%-30px * 2) / 9);
+}
+
+.title-wrapper {
+  padding: 24px 20px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .work-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
