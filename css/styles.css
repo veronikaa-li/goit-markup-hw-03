@@ -2,7 +2,28 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  letter-spacing: 0, 03em;
 }
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #ffffff;
+  --button-color: #2196f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
 .logo {
   font-family: 'Raleway';
   text-decoration: none;
@@ -10,21 +31,22 @@ body {
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
-:root {
-  --primary-text-color: #212121;
-  --title-text-color: #757575;
-  --accent-color: #ffffff;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: #2196f3;
+  background-color: var(--button-color);
   color: var(--accent-color);
 }
 
@@ -34,29 +56,18 @@ body {
   cursor: pointer;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 /* HEADER */
+
+.page {
+  border-bottom: 1px solid #ececec;
+}
 
 .page-header {
   display: flex;
-  border-bottom: 1px solid #ececec;
   align-items: center;
 }
 
 .header-logo {
-  margin-top: 24px;
   margin-right: 93px;
   font-weight: 700;
   font-size: 26px;
@@ -67,13 +78,17 @@ h3 {
 
 .header-nav {
   display: flex;
-  margin-right: auto;
-  padding: 0;
+  align-items: center;
 }
 .nav-list {
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
 }
 .accent {
   color: #2196f3;
@@ -96,7 +111,7 @@ h3 {
 
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--button-color);
 }
 
 .header-link {
@@ -114,9 +129,7 @@ h3 {
 
 .hero {
   background: #2f303a;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 200px 15px;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -135,10 +148,9 @@ h3 {
   margin: 0 auto;
   display: inline-block;
   min-width: 216px;
-  min-height: 50px;
   border-radius: 4px;
   padding: 10px 32px;
-  border-color: #2196f3;
+  border-color: var(--button-color);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -147,7 +159,8 @@ h3 {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--accent-color);
-  background: #2196f3;
+  background: var(--button-color);
+  border: none;
 }
 
 /*  Про нас  */
@@ -167,20 +180,13 @@ h3 {
 
 .about {
   padding-top: 94px;
-  padding-bottom: 94px ;
+  padding-bottom: 94px;
 }
 
 .about-title {
   display: flex;
   gap: 30px;
   text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.about-title-doing:not(:last-child) {
-  margin-right: 30px;
 }
 
 .about-title-name {
@@ -222,34 +228,31 @@ h3 {
 .picture-name {
   display: flex;
   gap: 30px;
-
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
 }
 
 /*  Наша команда  */
 
-.team {
-  padding-bottom: 94px;
+.our-team {
+  background-color: #f5f4fa;
+  padding-bottom: 94px 0;
 }
 
 .about-team {
   display: flex;
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
+.team-member {
+  background: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-member:not(:last-child) {
   margin-right: 30px;
 }
 
 .team-title {
-  margin: 0 0 50px;
-  padding: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -258,12 +261,8 @@ h3 {
   color: var(--primary-text-color);
 }
 
-.team-photo {
-  margin-bottom: 30px;
-}
-
 .members-title {
-  padding: 30px 62px;
+  padding: 30px 0;
 }
 
 .about-team-title {
@@ -292,9 +291,7 @@ h3 {
 
 .footer {
   background-color: #2f303a;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 60px 15px;
+  padding: 60px 60px;
 }
 
 .footer-logo {
@@ -304,6 +301,13 @@ h3 {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+.footer-title:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-adress-link {
@@ -337,16 +341,10 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 8px;
-  text-decoration: none;
-  list-style: none;
-  margin-bottom: 34px;
-  margin-top: 0;
-  padding: 0;
+  margin-bottom: 50px;
 }
 
 .second-btn {
-  min-width: 73px;
-  min-height: 26px;
   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
@@ -357,16 +355,13 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background: #f5f4fa;
+  border: none;
 }
 
 .work {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 0;
-  padding: 34px 0 94px;
-  text-decoration: none;
-  list-style: none;
 }
 
 .work-wrapper {
