@@ -24,6 +24,16 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
 .logo {
   font-family: 'Raleway';
   text-decoration: none;
@@ -112,6 +122,10 @@ p {
 .link:hover,
 .link:focus {
   color: var(--button-color);
+}
+
+.current {
+  color: var(--button-color)
 }
 
 .header-link {
@@ -234,7 +248,7 @@ p {
 
 .our-team {
   background-color: #f5f4fa;
-  padding-bottom: 94px 0;
+  padding: 94px 0;
 }
 
 .about-team {
@@ -291,7 +305,7 @@ p {
 
 .footer {
   background-color: #2f303a;
-  padding: 60px 60px;
+  padding: 60px 0;
 }
 
 .footer-logo {
